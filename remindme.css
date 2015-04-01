@@ -1,0 +1,110 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 3em 0;
+  padding: 0;
+}
+
+.outer {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: .3em;
+  margin: 0 0 .25em;
+  text-align: center;
+  text-indent: .3em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #999;
+  font-size: .875em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.reminders {
+  border-top: 1px solid #f1f1f1;
+  list-style-type: none;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+.reminder {
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  padding: .5em 0;
+  position: relative;
+  overflow: hidden;
+  transition: background 300ms ease-out;
+  border-left: 4px solid white;
+}
+
+.message {
+  color: #aaa;
+  line-height: 2.25rem;
+  text-align: center;
+}
+
+.reminder:before {
+  color: #999;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 3em;
+  text-align: center;
+  vertical-align: middle;
+  width: 3em;
+}
+
+.reminder .avatar {
+  display: inline-block;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.reminder .name {
+  display: inline-block;
+  width: 350px;
+  font-size: 1.25em;
+  font-weight: 300;
+  vertical-align: middle;
+  padding-left: 0.5em;
+}
+
+.reminder .frequency {
+  color: #333;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 2.4em;
+  padding-left: 6.25em;
+}
+
+.reminder .done {
+  	color: #333;
+	display: inline-block;
+	float: right;
+	font-size: 1.25em;
+	font-weight: 600;
+	line-height: 2.4em;
+	padding-right: 4em;
+}
+
+.reminder.selected {
+  background-color: #fefff4;
+  border-left: #eb5f3a 6px solid;
+}
+
+.reminder:hover {
+  background-color: #fefff4;
+}
