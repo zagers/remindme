@@ -17,8 +17,14 @@
 		{{#each reminders}}
 			{{> reminder}}
 		{{/each}}
-	</ul>
-	<div class="message">Click a reminder to edit</div>	
+	</ul>	
+	{{#if selectedName}}
+		<div class="details">
+			<div class="name">{{selectedName}}</div>
+		</div>
+	{{else}}
+		<div class="message">Click a reminder to edit</div>
+	{{/if}}
 </template>
 
 <template name="reminder">

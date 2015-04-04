@@ -3,6 +3,10 @@
 Template.reminders.helpers({
 	reminders: function(){
 		return Reminders.find({}, { sort: {name: 1}});
+	},
+	selectedName: function(){
+		var reminder = Reminders.findOne(Session.get("selectedReminder"));
+		return reminder && reminder.name;
 	}
 });
 
